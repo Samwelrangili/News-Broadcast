@@ -11,7 +11,6 @@ def index():
     '''
     title = "Home - News From Various News Sources"
 
-    # general_category = get_sources('general')
     business_category = get_sources('business')
     entertainment_category = get_sources('entertainment')
     sports_category = get_sources('sports')
