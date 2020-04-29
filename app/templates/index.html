@@ -1,3 +1,10 @@
+{% if title %}
+<title> {{ title }}</title>
+{% else %}
+<title> News Broadcast</title>
+{% endif %}
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
@@ -8,18 +15,7 @@
 {% block content%}
 
 <div class="container-fluid">
-        <div class="jumbotron mt-4" >
-                <h1 class="display-4 text-center">Welcome</h1>
-                <h1 class="display-4 text-center">To News Highlights</h1>
-                <p class="lead text-center">A simple application that will help list and preview news articles from various sources</p>
-                <p class='text-center'>Tap the buttons below to choose news sources by category. Then click on news source to view </p>
-        <p class="text-center">
-                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#generalNews" role="button" aria-expanded="false" aria-controls="collapseExample">General</a>
-                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#businessNews" role="button" aria-expanded="false" aria-controls="collapseExample">Business</a>
-                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#technologyNews" role="button" aria-expanded="false" aria-controls="collapseExample">Technology</a>
-                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#sportsNews" role="button" aria-expanded="false" aria-controls="collapseExample">Sports</a>
-                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#entertainmentNews" role="button" aria-expanded="false" aria-controls="collapseExample">Entertainment</a>
-              </p>
+        <div class="container-fluid" >
               <div class="card">
                 <div class="card-body">
                 <div id="generalNews" class="collapse">

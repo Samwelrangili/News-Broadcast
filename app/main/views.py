@@ -2,14 +2,14 @@
 from flask import render_template, redirect, url_for, request
 from . import main
 from ..models import Sources
-from ..requests import get_articles, get_sources,
+from ..requests import get_articles, get_sources
 
 @main.route('/')
 def index():
     '''
     View root page function that returns the index page and its data
     '''
-    title = "Home | Best News Update Site"
+    title = "News Broadcast"
 
     business_category = get_sources('business')
     entertainment_category = get_sources('entertainment')

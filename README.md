@@ -1,5 +1,5 @@
 # Project Name
-News-Preview
+News-Broadcast
 
 # Author 
 Samwel A.Rangili
