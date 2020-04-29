@@ -19,7 +19,7 @@ def index():
     science_category = get_sources('science')
     health_category = get_sources('health')
 
-    return render_template('index.html', title = title, general = general_category, business = business_category, entertainment = entertainment_category, sports = sports_category,tech = technology_category, science = science_category, health = health_category)
+    return render_template('index.html', title = title, business = business_category, entertainment = entertainment_category, sports = sports_category,technology = technology_category, science = science_category, health = health_category)
 
 
 @main.route('/articles/<source_id>&<int:per_page>')
