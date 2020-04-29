@@ -29,6 +29,12 @@ This is a web applicationn than has list and preview news articles from various 
 * $ chmod a+x start.sh
 * $ ./start.sh
 
+# Contact
+Reach me out on:
+* Email-samwelrangili896@gmail.com
+* LinkeIn-Samwel Rangili
+* Mobile-0758597216
+
 # MINT License
 MINT[License]
 

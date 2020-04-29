@@ -32,7 +32,6 @@ def get_sources(category):
 
     return sources_results
 
-
 def process_results(sources_list):
     '''
     Function that process our json results
@@ -52,7 +51,6 @@ def process_results(sources_list):
             sources_results.append(source_object)
 
     return sources_results
-
 
 def get_articles(source_id, article):
     '''
