@@ -1,25 +1,25 @@
-{% extends 'base.html' %}
+ 
+{% extends 'base.html' %} 
 {% block content %}
 <div class="container-fluid">
-    <div class="row mt">
-        <div class="col-md-12 text-center">
-            <h2> {{name|upper}} </h2>
+    <div class="row">
+        <div class="col-md-12">
         </div>
     </div>
     <div class="row">
-        {% for article in news %}
-        <div class="col-md-3 margin">
-            <a href="{{article.url}}" target="_blank">
-                <img src="{{article.urlToImage}}" alt="Image Loading..." class="img-responsive size">
+        {% for article in articles %}
+        <div class="col-md-3">
+            <a href={{article.url}} target="_blank">
+                <img class="img-fluid img-thumbnail" src={{article.urlToImage}} alt="pic">
             </a>
-            <div>
-                <h4 class="text-bold"> {{article.title|truncate(60)}}</h4>
-                <p class="small">{{article.author}}</p>
-                <p class="small">Posted on {{article.publishedAt}}</p>
+            <div class="card">
+                <h4>{{article.name}}</h4>
+                <p>by {{article.author}} </p>
                 <hr>
-                <p>{{article.description|truncate(100)}}
-                    <a href="{{article.url}}" target="_blank">Read More</a>
+                <p> {{article.description}}...
+                    <a href={{article.url}} target="_blank">Read More</a>
                 </p>
+                <p>Published on {{article.publishedAt}}</p>
             </div>
         </div>
         {% endfor %}
