@@ -9,7 +9,7 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    title = "Home - News From Various News Sources"
+    title = "Home | Best News Update Site"
 
     business_category = get_sources('business')
     entertainment_category = get_sources('entertainment')
