@@ -6,5 +6,9 @@ This is a web applicationn than has list and preview news articles from various 
 # Author 
 Samwel A.Rangili
 
-
+# User Story
+* Users can see various news sources on the homepage of the application.
+* Users can select a news source and see all news articles from the selected news source in the application.
+* Users can see the image, description and the time a news article was created.
+* Users can click on an article and read the full article on the source website.
 
