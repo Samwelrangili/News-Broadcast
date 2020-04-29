@@ -16,8 +16,18 @@ This is a web applicationn than has list and preview news articles from various 
 * View General News
 
 # Cloning
-* git clone https://github.com/Samwelrangili/News-Broadcast.git
-* cd News-Broadcast
+* $ git clone https://github.com/Samwelrangili/News-Broadcast.git
+* $ cd News-Broadcast
+
+# Technologies
+* Python3.6
+* Flask
+* HTML
+* Bootstrap
+
+# Running the Application
+* $ chmod a+x start.sh
+* $ ./start.sh
 
 
 
